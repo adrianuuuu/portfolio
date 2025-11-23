@@ -125,14 +125,14 @@ const projects = [
     image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop",
     description: "Plataforma de receitas culinárias",
     tags: ["React", "API", "Design"],
-    link: "../paginas/coding.html"
+    link: "paginas/coding.html"
   },
   {
     title: "PROJETO III",
     image: "https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=800&h=600&fit=crop",
     description: "Jogo de xadrez interativo",
     tags: ["Game Dev", "Logic", "UI"],
-    link: "../paginas/coding.html"
+    link: "paginas/coding.html"
   }
 ];
 
@@ -348,4 +348,5 @@ window.addEventListener("scroll", () => {
 
   progress.style.width = percent + "%";
 });
+
 

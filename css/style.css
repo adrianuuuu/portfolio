@@ -1255,6 +1255,23 @@ footer p {
   }
 }
 
+@media (max-width: 383px) {
+  .mobile-grid {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .mobile-grid {
+    margin-top: 5px;
+  }
+
+  .title-box h2{
+    font-size: 30px;
+  }
+}
+
+
 
 
 

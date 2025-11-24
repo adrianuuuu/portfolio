@@ -879,6 +879,22 @@ footer p {
   }
 }
 
+@media (max-width: 1330px) {
+  .skills-list li {
+    font-size: 0.70rem;
+}
+
+  .skills-list li i {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1115px) {
+  .skills-list{
+    gap: 10px;
+  }
+}
+
 @media (max-width: 1165px) {
   .intro .h1-titulo{
     font-size: 50px;
@@ -1246,6 +1262,7 @@ footer p {
     text-align: center;
   }
 }
+
 
 
 

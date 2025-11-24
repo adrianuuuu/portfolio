@@ -1140,7 +1140,7 @@ footer p {
 @media (max-width: 610px) {
   .profile{
     width: 400px;
-    height: 350px;
+    height: 400px;
   }
 }
 
@@ -1254,6 +1254,7 @@ footer p {
     text-align: center;
   }
 }
+
 
 
 

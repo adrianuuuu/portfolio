@@ -234,8 +234,8 @@ nav a:hover {
 .skills-list {
   list-style: none;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .skills-list li {
@@ -1246,5 +1246,6 @@ footer p {
     text-align: center;
   }
 }
+
 
 

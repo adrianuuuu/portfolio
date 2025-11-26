@@ -246,7 +246,7 @@ nav a:hover {
   gap: 8px;
   font-size: 0.93rem;
   color: #e2e8f0;
-  cursor: default;
+  cursor: pointer;
   transition: 0.2s;
 }
 
@@ -1302,5 +1302,6 @@ footer p {
     font-size: 30px;
   }
 }
+
 
 

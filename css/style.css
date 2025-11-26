@@ -395,7 +395,7 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: url(/projetos/portfolio/assets/2.png);
+  background-image: url(/portfolio/assets/2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1302,6 +1302,7 @@ footer p {
     font-size: 30px;
   }
 }
+
 
 
 

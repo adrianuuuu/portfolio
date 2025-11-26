@@ -122,7 +122,7 @@ const projects = [
   },
   {
     title: "PROJETO II",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop",
+    image: "assets/projeto II - TI.png",
     description: "Plataforma de receitas culinárias",
     tags: ["React", "API", "Design"],
     link: "paginas/coding.html"
@@ -348,5 +348,6 @@ window.addEventListener("scroll", () => {
 
   progress.style.width = percent + "%";
 });
+
 
 

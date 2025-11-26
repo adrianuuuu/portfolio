@@ -114,21 +114,21 @@ document.querySelectorAll(".sidebar-menu a").forEach(link => {
 
 const projects = [
   {
-    title: "PROJETO I",
+    title: "CALCULADORAS ONLINE",
     image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop",
-    description: "Calculadora moderna e interativa",
+    description: "Calculadora de IMC, Conversão de bases, financeira e científica",
     tags: ["JavaScript", "CSS", "HTML"],
     link: "https://adrianuuuu.github.io/Calculadoras/"
   },
   {
-    title: "PROJETO II",
+    title: "SISTEMA DE GESTÃO | TI",
     image: "assets/projeto II - TI.png",
     description: "Registro de chamados, equipamentos, estoque, usuários e status de rede",
     tags: ["React", "API", "Design"],
     link: "paginas/coding.html"
   },
   {
-    title: "PROJETO III",
+    title: "XADREZ | CHECKMATE",
     image: "https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=800&h=600&fit=crop",
     description: "Jogo de xadrez interativo",
     tags: ["Game Dev", "Logic", "UI"],
@@ -348,6 +348,7 @@ window.addEventListener("scroll", () => {
 
   progress.style.width = percent + "%";
 });
+
 
 
 

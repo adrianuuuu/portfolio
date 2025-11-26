@@ -850,9 +850,6 @@ footer p {
    RESPONSIVIDADE
 ========================================================= */
 @media (min-width: 1700px) {
-  .intro {
-    left: 55%;
-  }
 }
 
 
@@ -1302,6 +1299,7 @@ footer p {
     font-size: 30px;
   }
 }
+
 
 
 

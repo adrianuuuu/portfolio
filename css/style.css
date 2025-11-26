@@ -247,6 +247,7 @@ nav a:hover {
   font-size: 0.93rem;
   color: #e2e8f0;
   cursor: default;
+  transition: 0.2s;
 }
 
 .skills-list li i {
@@ -1301,4 +1302,5 @@ footer p {
     font-size: 30px;
   }
 }
+
 

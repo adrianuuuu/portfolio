@@ -123,7 +123,7 @@ const projects = [
   {
     title: "PROJETO II",
     image: "assets/projeto II - TI.png",
-    description: "Plataforma de receitas culinárias",
+    description: "Registro de chamados, equipamentos, estoque, usuários e status de rede",
     tags: ["React", "API", "Design"],
     link: "paginas/coding.html"
   },
@@ -348,6 +348,7 @@ window.addEventListener("scroll", () => {
 
   progress.style.width = percent + "%";
 });
+
 
 
 

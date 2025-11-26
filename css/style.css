@@ -279,7 +279,7 @@ nav a:hover {
   align-items: stretch;
   width: 100%;
   margin-top: 70px;
-  height: 600px;
+  height: 700px;
   padding-bottom: 80px;
   position: relative;
 }
@@ -320,7 +320,7 @@ nav a:hover {
   position: absolute;
   text-align: inicial;
   left: 50%;
-  bottom: 20%;
+  bottom: 30%;
   width: 50%;
 }
 
@@ -370,8 +370,8 @@ nav a:hover {
   border-radius: 8px;
   border: none;
   background: #00b4ff;
-  color: white;
-  font-weight: 600;
+  color: #010407ff;
+  font-weight: 1000;
   font-size: 25px;
   cursor: pointer;
   opacity: 0.8;

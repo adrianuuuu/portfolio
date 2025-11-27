@@ -1282,6 +1282,16 @@ footer p {
     width: 90%;
     text-align: center;
   }
+
+  .projects-section {
+    height: 650px;
+  }    
+}
+
+@media (max-width: 435px) {
+  .projects-section {
+    height: 750px;
+  }
 }
 
 @media (max-width: 383px) {
@@ -1299,6 +1309,7 @@ footer p {
     font-size: 30px;
   }
 }
+
 
 
 

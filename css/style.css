@@ -310,8 +310,8 @@ nav a:hover {
 }
 
 .profile {
-  width: 680px;
-  height: 590px;
+  width: 700px;
+  height: 690px;
   object-fit: cover;
   filter: contrast(110%) saturate(90%);
 }

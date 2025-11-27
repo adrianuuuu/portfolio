@@ -1,0 +1,159 @@
+/* =========================================================
+   HERO MOBILE PREMIUM — CORRIGIDA (IGUAL À IMAGEM)
+========================================================= */
+.hero-mobile {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 70px;
+    display: none; /* desktop oculto */
+}
+
+@media (max-width: 1000px) {
+    .hero-mobile {
+        display: block;
+    }
+}
+
+/* Background */
+.bg-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+         #010407ff 40%,
+         rgb(0, 2, 5) 100%
+         #0e2441fd 75%,
+    );
+}
+
+/* Conteúdo */
+.content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* SKILLS */
+.skills-box {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Glow */
+.profile-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: -50px;
+    background: radial-gradient(circle, #3b82f6 0%, transparent 70%);
+    opacity: 0.30;
+    filter: blur(60px);
+    z-index: -1;
+}
+
+.profile-mask {
+    width: 100%;
+    height: 100%;
+    mask-image: linear-gradient(to bottom, black 0%, black 45%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 45%, transparent 100%);
+}
+
+.profile-img {
+    margin-left: 65px;
+    width: 300px;
+    height: 300px;
+    border-radius: 28px;
+}
+
+/* TAG DE FUNDO — CENTRALIZADA ATRÁS DOS TÍTULOS */
+.foto-tag-mobile {
+    position: absolute;
+    top: -45px;
+    left: 51%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 200px;
+    opacity: 0.04;
+    z-index: 0;
+}
+
+/* =========================================================
+   TEXTOS — AGORA CENTRALIZADOS IGUAL À IMAGEM
+========================================================= */
+.intro-mobile {
+    position: relative;
+    left: 2%; 
+    width: 400px;
+    text-align: inicial;
+    z-index: 2;
+}
+
+.h1-titulo-mobile {
+    font-size: 45px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.15;
+}
+
+.span-titulo-mobile {
+    background: linear-gradient(to right, #5bb5ff, #0364a5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+/* h2 */
+.intro-mobile h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 2px 0;
+    color: #dbe4ee;
+}
+
+.span-h2-mobile {
+    background: linear-gradient(to right, #5bb5ff, #0364a5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Botão */
+.actions-mobile button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  width: 96%;
+  border-radius: 8px;
+  border: none;
+  background: #00b4ff;
+  color: #010407ff;
+  font-weight: 900;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+@media (max-width: 430px) {
+.h1-titulo-mobile{
+    font-size: 35px;
+  }  
+
+.intro-mobile h2{
+    font-size: 20px;
+  }
+
+.foto-tag-mobile {
+    left: 39%;
+  }
+  
+.actions-mobile button {
+    width: 75%;
+  }
+
+  .intro-mobile {
+    left: 13%;
+  }
+}
+

@@ -310,8 +310,8 @@ nav a:hover {
 }
 
 .profile {
-  width: 750px;
-  height: 690px;
+  width: 680px;
+  height: 590px;
   object-fit: cover;
   filter: contrast(110%) saturate(90%);
 }
@@ -1309,6 +1309,7 @@ footer p {
     font-size: 30px;
   }
 }
+
 
 
 

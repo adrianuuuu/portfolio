@@ -1,6 +1,5 @@
-/* =========================================================
-   ANIMAÇÕES COM INTERSECTION OBSERVER — DESKTOP ONLY
-========================================================= */
+
+   //ANIMAÇÕES COM INTERSECTION OBSERVER — DESKTOP ONLY
 
 function enableAnimations() {
   return window.innerWidth > 1000;
@@ -40,9 +39,8 @@ window.addEventListener("resize", () => {
 
 
 
-/* =========================================================
-   SCROLL SUAVE PARA LINKS ÂNCORA
-========================================================= */
+
+   //SCROLL SUAVE PARA LINKS ÂNCORA
 
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", e => {
@@ -59,10 +57,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-
-// =========================================================
 // FUNÇÃO scrollToSection()
-// =========================================================
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
   if (!section) return;
@@ -76,10 +71,8 @@ function scrollToSection(sectionId) {
 }
 
 
-/* =========================================================
-   SIDEBAR
-========================================================= */
 
+//SIDEBAR
 const toggleBtn = document.getElementById("toggle-btn");
 const sidebar = document.getElementById("sidebar");
 const overlay = document.getElementById("overlay");
@@ -108,10 +101,7 @@ document.querySelectorAll(".sidebar-menu a").forEach(link => {
 });
 
 
-/* =========================================================
-   PROJETOS — DADOS
-========================================================= */
-
+//PROJETOS — DADOS
 const projects = [
   {
     title: "CALCULADORAS ONLINE",
@@ -137,10 +127,7 @@ const projects = [
 ];
 
 
-/* =========================================================
-   CRIAÇÃO DO CARROSSEL (DESKTOP)
-========================================================= */
-
+//CRIAÇÃO DO CARROSSEL (DESKTOP)
 const carousel = document.getElementById("carousel");
 const mobileGrid = document.getElementById("mobileGrid");
 
@@ -177,10 +164,7 @@ projects.forEach((project, index) => {
 });
 
 
-// =========================================================
-// GRID MOBILE (COM BOTÃO SEMPRE ATIVO)
-// =========================================================
-
+//GRID MOBILE (COM BOTÃO SEMPRE ATIVO)
 projects.forEach(project => {
   const div = document.createElement("div");
   div.innerHTML = `
@@ -211,9 +195,7 @@ document.addEventListener("click", e => {
 });
 
 
-/* =========================================================
-   LÓGICA DO CARROSSEL — POSICIONAMENTO
-========================================================= */
+//LÓGICA DO CARROSSEL — POSICIONAMENTO
 
 function isDesktop() {
   return window.innerWidth > 930;
@@ -256,12 +238,9 @@ function updatePositions() {
 }
 
 
-/* =========================================================
-   BOTÃO "VER PROJETO" (SOMENTE CARROSSEL DESKTOP)
-========================================================= */
+//BOTÃO "VER PROJETO" (SOMENTE CARROSSEL DESKTOP)
 
 function updateViewButton() {
-  // 🔥 AGORA: remove APENAS os botões dentro do carrossel
   document.querySelectorAll(".carousel .view-btn").forEach(b => b.remove());
 
   const card = document.querySelector(`.carousel .card[data-index="${currentIndex}"]`);
@@ -278,10 +257,7 @@ function updateViewButton() {
 }
 
 
-/* =========================================================
-   BOTÕES DE NAVEGAÇÃO DO CARROSSEL
-========================================================= */
-
+//BOTÕES DE NAVEGAÇÃO DO CARROSSEL
 document.addEventListener("DOMContentLoaded", () => {
   updatePositions();
   updateViewButton();
@@ -300,9 +276,7 @@ document.querySelector(".right-btn")?.addEventListener("click", () => {
 });
 
 
-/* =========================================================
-   NAVEGAÇÃO LATERAL (DOTS)
-========================================================= */
+//NAVEGAÇÃO LATERAL (DOTS)
 
 const dots = document.querySelectorAll(".side-nav .dot");
 const sections = [
@@ -331,11 +305,7 @@ const dotObserver = new IntersectionObserver(entries => {
 
 sections.forEach(sec => sec && dotObserver.observe(sec));
 
-
-/* =========================================================
-   MOBILE SCROLL PROGRESS BAR
-========================================================= */
-
+//MOBILE SCROLL PROGRESS BAR
 window.addEventListener("scroll", () => {
   if (window.innerWidth > 1000) return; // só mobile
 
@@ -348,6 +318,7 @@ window.addEventListener("scroll", () => {
 
   progress.style.width = percent + "%";
 });
+
 
 
 

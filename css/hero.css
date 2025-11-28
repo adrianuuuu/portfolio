@@ -1,13 +1,11 @@
-/* =========================================================
-   HERO MOBILE PREMIUM — CORRIGIDA (IGUAL À IMAGEM)
-========================================================= */
+/*HERO MOBILE PREMIUM — CORRIGIDA (IGUAL À IMAGEM)*/
 .hero-mobile {
     width: 100%;
     height: 650px;
     position: relative;
     overflow: hidden;
     padding-top: 70px;
-    display: none; /* desktop oculto */
+    display: none; 
 }
 
 @media (max-width: 1000px) {
@@ -16,7 +14,6 @@
     }
 }
 
-/* Background */
 .bg-gradient {
     position: absolute;
     inset: 0;
@@ -28,7 +25,6 @@
     );
 }
 
-/* Conteúdo */
 .content {
     position: relative;
     z-index: 10;
@@ -38,13 +34,13 @@
     align-items: center;
 }
 
-/* SKILLS */
+
 .skills-box {
     margin-top: 10px;
     text-align: center;
 }
 
-/* Glow */
+
 .profile-wrapper::after {
     content: "";
     position: absolute;
@@ -69,7 +65,6 @@
     border-radius: 28px;
 }
 
-/* TAG DE FUNDO — CENTRALIZADA ATRÁS DOS TÍTULOS */
 .foto-tag-mobile {
     position: absolute;
     top: -45px;
@@ -81,9 +76,6 @@
     z-index: 0;
 }
 
-/* =========================================================
-   TEXTOS — AGORA CENTRALIZADOS IGUAL À IMAGEM
-========================================================= */
 .intro-mobile {
     position: relative;
     left: 2%; 
@@ -106,7 +98,7 @@
     font-weight: 900;
 }
 
-/* h2 */
+
 .intro-mobile h2 {
     font-size: 25px;
     font-weight: 700;
@@ -120,7 +112,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* Botão */
+
 .actions-mobile button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -156,4 +148,5 @@
     left: 13%;
   }
 }
+
 

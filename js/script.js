@@ -114,8 +114,8 @@ const projects = [
     title: "SISTEMA DE GESTÃO | TI",
     image: "assets/projeto II - TI.png",
     description: "Registro de chamados, equipamentos, estoque, usuários e status de rede",
-    tags: ["React", "API", "Design"],
-    link: "paginas/coding.html"
+    tags: ["Node.js", "API", "PostgreSQL"],
+    link: "https://adrianuuuu.github.io/demonstracao-sistema-ti/index.html"
   },
   {
     title: "XADREZ | CHECKMATE",

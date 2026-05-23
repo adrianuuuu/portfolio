@@ -1,6 +1,4 @@
-/* =========================================================
-   RESET E BASE
-========================================================= */
+  /* RESET E BASE */
 * {
   margin: 0;
   padding: 0;
@@ -18,11 +16,7 @@ body {
 }
 
 
-/* =========================================================
-   ANIMAÇÕES GERAIS — INTERSECTION OBSERVER
-========================================================= */
-
-/* estado inicial: invisível + levemente abaixo */
+/*ANIMAÇÕES GERAIS — INTERSECTION OBSERVER */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -94,9 +88,7 @@ body {
   display: none;
 }
 
-/* =========================================================
-   HEADER
-========================================================= */
+/*HEADER */
 header {
   position: fixed;
   top: 0;
@@ -139,9 +131,7 @@ nav a:hover {
   color: #38bdf8;
 }
 
-/* =========================================================
-   SIDEBAR + TOGGLE
-========================================================= */
+/*SIDEBAR + TOGGLE*/
 .toggle-btn {
   display: none;
   font-size: 1.6rem;
@@ -223,10 +213,7 @@ nav a:hover {
   pointer-events: auto;
 }
 
-/* =========================================================
-   SKILLS NA LEFT-HERO
-========================================================= */
-
+/*SKILLS NA LEFT-HERO*/
 .skills-box {
   margin-top: 20px;
   
@@ -266,9 +253,7 @@ nav a:hover {
   transform: scale(1.12);
 }
 
-/* =========================================================
-   HERO
-========================================================= */
+/*HERO */
 .hero-mobile{
   display: none;
 }
@@ -291,17 +276,16 @@ nav a:hover {
   height: 100%;
   min-height: 700px;
   padding: 0;
-  position: relative; /* FUNDAMENTAL */
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 
-/* FOTO FIXA NA DIVISA - 100% CORRIGIDO */
 .profile-container {
   position: absolute;
   bottom: 0px;
-  top: 150px;  
-  left: 0;                /* centraliza verticalmente */
+  top: 60px;  
+  left: 0;             
   transform: translateY(-50%);
   z-index: 1;
   display: flex;
@@ -310,17 +294,17 @@ nav a:hover {
 }
 
 .profile {
-  width: 680px;
-  height: 590px;
+  width: 700px;
+  height: 690px;
   object-fit: cover;
   filter: contrast(110%) saturate(90%);
 }
 
-/* INTRO */ 
+/* INTRO */
 .intro {
   position: absolute;
   text-align: inicial;
-  left: 48%;
+  left: 50%;
   bottom: 30%;
   width: 50%;
 }
@@ -383,9 +367,7 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* =========================================================
-   SEÇÃO SOBRE MIM
-========================================================= */
+/* SEÇÃO SOBRE MIM */
 .sobre-mim {
   position: relative;
   width: 100%;
@@ -395,7 +377,7 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: url(/projetos/portfolio/assets/2.png);
+  background-image: url(/portfolio/assets/2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -464,9 +446,7 @@ nav a:hover {
   50% { opacity: 1; }
 }
 
-/* =========================================================
-   SESSÃO PROJETOS — DESKTOP
-========================================================= */
+/*SESSÃO PROJETOS — DESKTOP*/
 .projects-section {
   width: 100%;
   height: 600px;
@@ -510,7 +490,6 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0px;
 }
 
 /* CARD */
@@ -611,9 +590,7 @@ nav a:hover {
 .left-btn { left: 0; }
 .right-btn { right: 0; }
 
-/* =========================================================
-   GRID MOBILE (ATIVADO APENAS NO MOBILE)
-========================================================= */
+/*GRID MOBILE (ATIVADO APENAS NO MOBILE)*/
 .mobile-grid {
   display: none;
 }
@@ -622,9 +599,7 @@ nav a:hover {
   margin-bottom: 25px;
 }
 
-/* =========================================================
-   SEÇÃO CONTATO
-========================================================= */
+/*SEÇÃO CONTATO*/
 .contato {
   width: 100%;
   background: #0b1220;
@@ -732,9 +707,7 @@ textarea:focus {
   transform: translateY(-2px);
 }
 
-/* =========================================================
-   NAVEGAÇÃO LATERAL (DOTS)
-========================================================= */
+/*NAVEGAÇÃO LATERAL (DOTS)*/
 .side-nav {
   position: fixed;
   top: 50%;
@@ -790,9 +763,7 @@ textarea:focus {
   transform: translateY(-50%) translateX(-6px);
 }
 
-/* =========================================================
-   FOOTER
-========================================================= */
+/*FOOTER*/
 footer {
   width: 100%;
   height: 70px;
@@ -819,9 +790,7 @@ footer p {
   color: #38bdf8;
 }
 
-/* =========================================================
-   DOT GRID
-========================================================= */
+/*DOT GRID */
 .dot-grid {
   position: absolute;
   inset: 0;
@@ -847,9 +816,10 @@ footer p {
   opacity: 1;
 }
 
-/* =========================================================
-   RESPONSIVIDADE
-========================================================= */
+/*RESPONSIVIDADE*/
+@media (min-width: 1700px) {
+}
+
 
 @media (max-width: 1545px) {
   .intro .h1-titulo{
@@ -1002,9 +972,11 @@ footer p {
   }
 
    .skills-box {
+    margin: 0;
+    padding: 0;
     width: 100%;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 10px;
   }
 
   .skills-list {
@@ -1046,10 +1018,8 @@ footer p {
     padding: 5px;
   }
 
-  /* remove side nav */
   .side-nav { display: none; }
 
-  /* header simplificado */
   .menu-header,
   .social { display: none; }
 
@@ -1062,7 +1032,6 @@ footer p {
     display: block;
   }
 
-  /* REMOVE TOTALMENTE O CARROSSEL DESKTOP NO MOBILE */
   .carousel,
   .carousel.desktop,
   .carousel-container {
@@ -1071,7 +1040,6 @@ footer p {
     overflow: hidden !important;
   }
 
-  /* impede qualquer transform residual do JS */
   .card,
   .card[style] {
     position: static !important;
@@ -1082,14 +1050,13 @@ footer p {
     right: 0 !important;
   }
 
-  /* ativa apenas o grid mobile */
   .mobile-grid {
     display: grid !important;
     grid-template-columns: 1fr;
     gap: 25px;
     padding: 0 15px;
     margin-top: 40px;
-    margin-bottom: 60px !important; /* AQUI!! */
+    margin-bottom: 60px !important; 
     
   }
 
@@ -1113,8 +1080,6 @@ footer p {
   margin-bottom: 880px !important;
 }
 
-
-  /* ZERA QUALQUER OVERFLOW */
   html, body {
     overflow-x: hidden !important;
   }
@@ -1201,10 +1166,6 @@ footer p {
   color: #38bdf8;
 }
 
-/* ==========================
-     MOBILE
-========================== */
-
 @media (max-width: 768px) {
 
   .cv-title {
@@ -1222,7 +1183,7 @@ footer p {
 
   .projects-section {
     height: 650px;
-  }
+  }    
 }
 
 @media (max-width: 435px) {
@@ -1246,4 +1207,11 @@ footer p {
     font-size: 30px;
   }
 }
+
+
+
+
+
+
+
 

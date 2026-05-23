@@ -820,6 +820,91 @@ footer p {
 @media (min-width: 1700px) {
 }
 
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  width: 70%;
+  max-height: 80%;
+  overflow-y: auto;
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 16px;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+}
+
+.modal-content h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-left: 3px solid #38bdf8;
+  padding-left: 10px;
+}
+
+.modal-content p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.modal-content ul {
+  margin: 10px 0 15px 20px;
+}
+
+.modal-content li {
+  margin-bottom: 6px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.preview-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(0, 150, 255, 0.85);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 150, 255, 0.5);
+}
+
+.card:hover .preview-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.preview-btn:hover {
+  background: rgba(0, 180, 255, 1);
+  transform: scale(1.05);
+}
+
+.card-inner {
+  position: relative;
+}
 
 @media (max-width: 1545px) {
   .intro .h1-titulo{

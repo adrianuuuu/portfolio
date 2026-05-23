@@ -109,14 +109,100 @@ const projects = [
     image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop",
     description: "Calculadora de IMC, Conversão de bases, financeira e científica",
     tags: ["JavaScript", "CSS", "HTML"],
-    link: "https://adrianuuuu.github.io/Calculadoras/"
+    link: "https://adrianuuuu.github.io/Calculadoras/",
+    details: `
+          <h2>🧮 Calculadoras Online</h2>
+
+          <p><strong>Fala devs! 👨‍💻🌐</strong></p>
+
+          <p>Este projeto é uma aplicação web que reúne diversas calculadoras úteis em um único ambiente, com foco em praticidade, organização e facilidade de uso no dia a dia.</p>
+
+          <p>A proposta foi criar uma ferramenta simples, rápida e acessível, permitindo que qualquer usuário realize cálculos importantes sem precisar recorrer a múltiplos sites ou ferramentas externas.</p>
+
+          <h3>💡 Sobre o Projeto</h3>
+          <p>O sistema centraliza diferentes tipos de cálculos em uma interface única, intuitiva e responsiva, garantindo uma boa experiência tanto em desktop quanto em dispositivos móveis.</p>
+
+          <h3>🧩 Funcionalidades</h3>
+          <ul>
+          <li><strong>📌 Calculadora de IMC:</strong> Permite calcular o Índice de Massa Corporal com base em peso e altura, exibindo também a classificação (baixo peso, normal, sobrepeso, obesidade).</li>
+
+          <li><strong>🔢 Conversão de Bases Numéricas:</strong> Converte números entre diferentes bases (binário, decimal, hexadecimal), sendo útil para estudantes e desenvolvedores.</li>
+
+          <li><strong>💰 Calculadora Financeira:</strong> Realiza cálculos como juros simples e compostos, ajudando no planejamento financeiro e análise de investimentos.</li>
+
+          <li><strong>🧠 Calculadora Científica:</strong> Executa operações matemáticas mais avançadas, incluindo funções trigonométricas, exponenciais e cálculos complexos.</li>
+          </ul>
+
+          <h3>🛠️ Tecnologias Utilizadas</h3>
+          <p>HTML5, CSS3 e JavaScript (Vanilla JS)</p>
+
+          <h3>💻 Skills Demonstradas</h3>
+          <ul>
+          <li>Manipulação de DOM</li>
+          <li>Criação de interfaces interativas</li>
+          <li>Lógica de programação aplicada a cálculos</li>
+          <li>Organização de múltiplos módulos em um único sistema</li>
+          <li>Responsividade (mobile + desktop)</li>
+          <li>Boas práticas de UI/UX</li>
+          </ul>
+
+          <h3>🎯 Problemas que o Projeto Resolve</h3>
+          <ul>
+          <li>Evita o uso de múltiplas ferramentas separadas</li>
+          <li>Facilita cálculos do dia a dia</li>
+          <li>Centraliza funcionalidades em um único sistema</li>
+          <li>Melhora a produtividade do usuário</li>
+          </ul>
+
+          <h3>📈 Aplicações Práticas</h3>
+          <p>Este projeto pode ser utilizado por estudantes, profissionais de tecnologia, pessoas que desejam controlar finanças ou qualquer usuário que precise realizar cálos rápidos com praticidade.</p>
+
+          <h3>🚀 Conclusão</h3>
+          <p>Um projeto focado em utilidade real, organização e experiência do usuário, demonstrando habilidades em desenvolvimento front-end e construção de aplicações interativas.</p>
+          `
   },
   {
     title: "SISTEMA DE GESTÃO | TI",
     image: "assets/projeto II - TI.png",
     description: "Registro de chamados, equipamentos, estoque, usuários e status de rede",
     tags: ["Node.js", "API", "PostgreSQL"],
-    link: "https://adrianuuuu.github.io/demonstracao-sistema-ti/index.html"
+    link: "https://adrianuuuu.github.io/demonstracao-sistema-ti/index.html",
+    details: `
+          <h2>🚀 Sistema de Gestão de Chamados e Inventário de TI</h2>
+
+          <p><strong>Fala devs! 👨‍💻🌐</strong></p>
+
+          <p>Este projeto é uma versão demonstrativa (MVP) de um sistema criado para resolver problemas reais na área de TI, focado em organização, controle e agilidade no suporte técnico.</p>
+
+          <h3>⚠️ Importante</h3>
+          <p>Esta versão contém apenas frontend + mock. A versão real possui backend completo, autenticação e banco de dados.</p>
+
+          <h3>💡 Funcionalidades</h3>
+          <ul>
+          <li>Abertura e acompanhamento de chamados</li>
+          <li>Controle de status</li>
+          <li>Gestão de inventário</li>
+          <li>Dashboard com indicadores</li>
+          <li>Administração de usuários</li>
+          </ul>
+
+          <h3>🛠️ Tecnologias</h3>
+          <p>HTML5, CSS3, JavaScript, Node.js, Express, JWT</p>
+
+          <h3>🎯 Problemas resolvidos</h3>
+          <ul>
+          <li>Falta de organização no suporte</li>
+          <li>Dificuldade de rastreamento</li>
+          <li>Controle ineficiente de equipamentos</li>
+          <li>Falta de visão gerencial</li>
+          </ul>
+
+          <h3>📈 Aplicação</h3>
+          <p>Empresas, órgãos públicos, técnicos e equipes de suporte.</p>
+
+          <h3>🚀 Conclusão</h3>
+          <p>Projeto focado em resolver problemas reais, com arquitetura escalável e visão de produto.</p>
+          `,
   },
   {
     title: "XADREZ | CHECKMATE",
@@ -223,6 +309,7 @@ function getCardPosition(i) {
 function updatePositions() {
   if (!isDesktop()) {
     clearCarouselInline();
+    updatePreviewButton();
     return;
   }
 
@@ -236,6 +323,29 @@ function updatePositions() {
   });
 
   updateViewButton();
+  updatePreviewButton();
+}
+
+function updatePreviewButton() {
+  document.querySelectorAll(".preview-btn").forEach(b => b.remove());
+
+  if (!isDesktop()) return;
+
+  const card = document.querySelector(`.card[data-index="${currentIndex}"]`);
+  if (!card) return;
+
+  const project = projects[currentIndex];
+
+  const btn = document.createElement("div");
+  btn.className = "preview-btn";
+  btn.innerText = "Preview";
+
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    openModal(project);
+  });
+
+  card.appendChild(btn);
 }
 
 
@@ -256,6 +366,24 @@ function updateViewButton() {
 
   card.querySelector(".card-content").appendChild(btn);
 }
+
+const modal = document.getElementById("projectModal");
+const modalBody = document.getElementById("modalBody");
+
+function openModal(project) {
+  modal.classList.add("active");
+  modalBody.innerHTML = project.details || "<p>Sem detalhes disponíveis</p>";
+}
+
+document.querySelector(".close-modal").onclick = () => {
+  modal.classList.remove("active");
+};
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.remove("active");
+  }
+});
 
 
 //BOTÕES DE NAVEGAÇÃO DO CARROSSEL

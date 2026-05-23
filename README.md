@@ -59,9 +59,6 @@ Implementação de automações com IA
 🔗 Portfólio Online:
 https://lnkd.in/dAFAcbA7
 
-🔗 Repositório:
-(adicione aqui)
-
 💼 Sobre mim
 
 Sou Desenvolvedor Full Stack com foco em criação de aplicações web modernas, atuando tanto no frontend quanto no backend.

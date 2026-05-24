@@ -106,7 +106,7 @@ document.querySelectorAll(".sidebar-menu a").forEach(link => {
 const projects = [
   {
     title: "CALCULADORAS ONLINE",
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop",
+    image: "assets/telacalc.png",
     description: "Calculadora de IMC, Conversão de bases, financeira e científica",
     tags: ["JavaScript", "CSS", "HTML"],
     link: "https://adrianuuuu.github.io/Calculadoras/",
@@ -163,7 +163,7 @@ const projects = [
   },
   {
     title: "SISTEMA DE GESTÃO | TI",
-    image: "assets/projeto II - TI.png",
+    image: "assets/teladashboard.png",
     description: "Registro de chamados, equipamentos, estoque, usuários e status de rede",
     tags: ["Node.js", "API", "PostgreSQL"],
     link: "https://adrianuuuu.github.io/demonstracao-sistema-ti/index.html",

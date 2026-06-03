@@ -1,6 +1,6 @@
 
-   //ADICIONAR UMA FUNÇÃO PARA QUE AO PASSAR O MOUSE SOBRE O PROJETO, APREÇA UM BOTÃO ANIMADO NA PARTE SUPERIOR DO BANNER DO 
-   // CARD ( DO LADO DE DENTRO), PARA VER UM PREVIEW DAS CARACTERISTICAS DO PROJETO, SKILLS USADAS, LINK PARA O PROJETO ETC... (SOMENTE DESKTOP)
+//ADICIONAR UMA FUNÇÃO PARA QUE AO PASSAR O MOUSE SOBRE O PROJETO, APREÇA UM BOTÃO ANIMADO NA PARTE SUPERIOR DO BANNER DO 
+// CARD ( DO LADO DE DENTRO), PARA VER UM PREVIEW DAS CARACTERISTICAS DO PROJETO, SKILLS USADAS, LINK PARA O PROJETO ETC... (SOMENTE DESKTOP)
 
 function enableAnimations() {
   return window.innerWidth > 1000;
@@ -41,7 +41,7 @@ window.addEventListener("resize", () => {
 
 
 
-   //SCROLL SUAVE PARA LINKS ÂNCORA
+//SCROLL SUAVE PARA LINKS ÂNCORA
 
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", e => {
@@ -205,10 +205,10 @@ const projects = [
           `,
   },
   {
-    title: "XADREZ | CHECKMATE",
-    image: "https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=800&h=600&fit=crop",
-    description: "Jogo de xadrez interativo",
-    tags: ["Game Dev", "Logic", "UI"],
+    title: "ATLAS | AGENTE DE IA",
+    image: "assets/logoAtlas.png",
+    description: "Assistente virtual gerado com IA para auxiliar abertura e acompanhamento de chamados via WhatsApp",
+    tags: ["N8N", "PostgreSQL", "OpenRouter"],
     link: "paginas/coding.html"
   }
 ];

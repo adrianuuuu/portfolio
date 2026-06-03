@@ -207,9 +207,9 @@ const projects = [
   {
     title: "ATLAS | AGENTE DE IA",
     image: "assets/logoAtlas.png",
-    description: "Assistente virtual gerado com IA para auxiliar abertura e acompanhamento de chamados via WhatsApp",
+    description: "Abertura e acompanhamento de chamados via WhatsApp",
     tags: ["N8N", "PostgreSQL", "OpenRouter"],
-    link: "paginas/coding.html"
+    link: "assets/ATLAS APRESENTAÇÃO.pdf"
   }
 ];
 

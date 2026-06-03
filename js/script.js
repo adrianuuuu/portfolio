@@ -209,7 +209,8 @@ const projects = [
     image: "assets/logoAtlas.png",
     description: "Abertura e acompanhamento de chamados via WhatsApp",
     tags: ["N8N", "PostgreSQL", "OpenRouter"],
-    link: "assets/ATLAS APRESENTAÇÃO.pdf"
+    link: "assets/ATLAS APRESENTAÇÃO.pdf",
+    details: "assets/ATLAS APRESENTAÇÃO.pdf"
   }
 ];
 

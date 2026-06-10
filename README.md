@@ -3,9 +3,8 @@
 # Adriano · Desenvolvedor Fullstack
 ### Construindo interfaces que funcionam. Código que faz sentido.
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfólio_Online-000000?style=for-the-badge)](https://adrianuuuu.github.io/portfolio/))
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/adriano-mesquita-da-silva-b30151209)
-[![Email](https://img.shields.io/badge/Contato-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adrianonegociosdev@gmail.com)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfólio_Online-000000?style=for-the-badge)](https://adrianuuuu.github.io/portfolio/)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adriano-mesquita-da-silva-b30151209/)
 
 </div>
 

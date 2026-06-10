@@ -62,7 +62,7 @@ Não é só uma página de apresentação. É prova de código.
 
 ## 👤 Sobre mim
 
-Sou desenvolvedor web com quase 5 anos de experiência prática construindo sistemas internos, APIs REST e automações de fluxo — com atuação profissional no setor público (SEINFRA/Maracanaú).
+Sou desenvolvedor fullstack com quase 3 anos de experiência prática construindo sistemas internos, APIs REST e automações de fluxo — com atuação profissional no setor público (SEINFRA/Maracanaú).
 
 Minha formação inclui Técnico em Informática pelo IFCE e Tecnólogo em Análise e Desenvolvimento de Sistemas pela Estácio.
 

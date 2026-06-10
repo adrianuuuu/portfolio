@@ -1,81 +1,81 @@
-🚀 Portfólio Pessoal — Desenvolvedor Full Stack
+<div align="center">
 
-Fala devs! 👨‍💻🌍
+# Adriano · Desenvolvedor Fullstack
+### Construindo interfaces que funcionam. Código que faz sentido.
 
-Este repositório apresenta meu Portfólio Profissional, desenvolvido com foco em demonstrar minhas habilidades práticas em desenvolvimento web, organização de projetos e construção de interfaces modernas.
+[![Portfolio](https://img.shields.io/badge/🌐_Portfólio_Online-000000?style=for-the-badge)](https://adrianuuuu.github.io/portfolio/))
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/adriano-mesquita-da-silva-b30151209)
+[![Email](https://img.shields.io/badge/Contato-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adrianonegociosdev@gmail.com)
 
-A proposta é simples: centralizar minha identidade como desenvolvedor em uma aplicação clara, funcional e visualmente profissional.
+</div>
 
-⚡ Sobre o Projeto
+---
 
-Este portfólio foi pensado como uma vitrine técnica, onde apresento:
+## 🧑‍💻 Sobre este projeto
 
-Minha visão como desenvolvedor
-Minha forma de trabalhar
-Meus projetos na prática
-Um canal direto para contato profissional
+Este repositório é o código-fonte do meu portfólio profissional — uma aplicação web que centraliza minha identidade como desenvolvedor: quem sou, como trabalho e o que já construí.
 
-Tudo isso em uma interface moderna, responsiva e objetiva.
+Não é só uma página de apresentação. É prova de código.
 
-🎯 Objetivo
+---
 
-Criar uma aplicação que funcione como um hub profissional, facilitando para recrutadores e empresas entenderem rapidamente:
+## ⚡ Stack
 
-Quem eu sou
-O que eu sei fazer
-Como eu construo soluções
-🧩 Funcionalidades
-👨‍💻 Apresentação profissional (Sobre mim)
-⚙️ Metodologia de trabalho
-📄 Currículo estruturado
-💼 Exibição de projetos
-📬 Formulário de contato
-🔗 Integração com redes sociais
-🛠️ Tecnologias Utilizadas
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 
-Este projeto foi desenvolvido com foco em fundamentos sólidos do frontend:
+---
 
-HTML5 → Estrutura semântica
-CSS3 → Design moderno e responsivo
-JavaScript → Interatividade e dinamismo
-⚡ Destaques Técnicos
-Interface moderna e intuitiva
-Responsividade completa (mobile-first)
-Organização clara de código
-Navegação fluida
-Estrutura escalável para evolução futura
-🚧 Evolução do Projeto
+## 🗂️ O que você encontra aqui
 
-Este portfólio está em constante evolução. Próximas melhorias incluem:
+| Seção | Descrição |
+|---|---|
+| 👨‍💻 **Sobre mim** | Minha trajetória e forma de trabalhar |
+| 💼 **Projetos** | Aplicações reais que eu construí |
+| 📄 **Currículo** | Experiência e formação estruturadas |
+| 📬 **Contato** | Canal direto para oportunidades |
 
-Integração com backend
-Consumo de APIs
-Novos projetos Full Stack
-Funcionalidades dinâmicas com dados reais
-Implementação de automações com IA
+---
 
-🌐 Acesse o Projeto
+## 🎯 Diferenciais técnicos
 
-🔗 Portfólio Online:
-https://lnkd.in/dAFAcbA7
+- **Mobile-first** — responsivo em qualquer dispositivo
+- **Semântica correta** — HTML acessível e bem estruturado
+- **CSS sem frameworks** — domínio real do layout, sem muletas
+- **JavaScript vanilla** — lógica limpa, sem dependência desnecessária
+- **Código organizado** — fácil de ler, fácil de evoluir
 
-💼 Sobre mim
+---
 
-Sou Desenvolvedor Full Stack com foco em criação de aplicações web modernas, atuando tanto no frontend quanto no backend.
+## 🚀 Próximas evoluções
 
-Tenho experiência prática em:
+- [ ] Migração para React.js
+- [ ] Integração com backend (Node.js + API REST)
+- [ ] Painel dinâmico de projetos via banco de dados
+- [ ] Automações com IA
+- [ ] Tema escuro / claro
 
-Desenvolvimento de sistemas web
-Criação de APIs REST
-Integração frontend/backend
-Estruturação de projetos escaláveis
-🚀 Stack principal:
-JavaScript (ES6+)
-React.js
-Node.js
-SQL / MySQL
-Git & GitHub
+---
 
-⭐ Considerações finais
+## 👤 Sobre mim
 
-Este projeto representa minha capacidade de transformar ideias em aplicações reais, com foco em qualidade, usabilidade e organização de código.
+Sou desenvolvedor web com quase 5 anos de experiência prática construindo sistemas internos, APIs REST e automações de fluxo — com atuação profissional no setor público (SEINFRA/Maracanaú).
+
+Minha formação inclui Técnico em Informática pelo IFCE e Tecnólogo em Análise e Desenvolvimento de Sistemas pela Estácio.
+
+Busco minha primeira oportunidade formal na área de desenvolvimento — com portfólio real, código funcional e muita vontade de crescer.
+
+---
+
+<div align="center">
+
+**Se você é recrutador, obrigado por chegar até aqui.** 🤝  
+Fique à vontade para explorar o código, acessar o portfólio ou entrar em contato diretamente.
+
+[![Portfolio](https://img.shields.io/badge/Ver_Portfólio-000000?style=for-the-badge)](https://lnkd.in/dAFAcbA7)
+
+</div>

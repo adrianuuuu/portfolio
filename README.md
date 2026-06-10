@@ -75,6 +75,6 @@ Busco minha primeira oportunidade formal na área de desenvolvimento — com por
 **Se você é recrutador, obrigado por chegar até aqui.** 🤝  
 Fique à vontade para explorar o código, acessar o portfólio ou entrar em contato diretamente.
 
-[![Portfolio](https://img.shields.io/badge/Ver_Portfólio-000000?style=for-the-badge)](https://lnkd.in/dAFAcbA7)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfólio_Online-000000?style=for-the-badge)](https://adrianuuuu.github.io/portfolio/)
 
 </div>

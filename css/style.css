@@ -371,13 +371,14 @@ nav a:hover {
 .sobre-mim {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
+  padding: 7rem 0 5rem;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: url(/portfolio/assets/2.png);
+  background-image: url('../assets/2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -389,61 +390,189 @@ nav a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(3, 8, 18, 0.72);
   z-index: 1;
 }
 
 .background-overlay {
   position: absolute;
   inset: 0;
+  background: radial-gradient(circle at center, rgba(14, 95, 168, 0.18), transparent 55%);
   z-index: 0;
 }
 
-.container {
+.sobre-content {
+  position: relative;
+  z-index: 2;
+  width: min(1200px, 82%);
+  margin: 0 auto;
+}
+
+.sobre-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-kicker {
+  display: inline-block;
+  position: relative;
+  padding-left: 2.3rem;
+  color: #6cc4ff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.15rem;
+}
+
+.section-kicker::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1.8rem;
+  height: 3px;
+  border-radius: 999px;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, #38bdf8, rgba(56, 189, 248, 0.2));
+}
+
+.sobre-header h2 {
+  font-size: clamp(3rem, 4.5vw, 5.3rem);
+  line-height: 1;
+  letter-spacing: -0.08em;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  color: #f8fbff;
+}
+
+.sobre-header p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: clamp(1.1rem, 1.6vw, 1.7rem);
+  line-height: 1.6;
+  letter-spacing: -0.02em;
+  color: rgba(226, 236, 250, 0.9);
+}
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem 1.5rem;
+}
+
+.sobre-card {
   position: relative;
   display: flex;
-  justify-content: space-between;
-  width: 80%;
-  z-index: 2;
-}
-
-.coluna {
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 45%;
+  min-height: 100%;
+  padding: 1.4rem 1.5rem 1.1rem;
+  border-radius: 1.1rem;
+  background: rgba(8, 19, 33, 0.6);
+  border: 1px solid rgba(89, 170, 255, 0.22);
+  box-shadow: 0 0 0 1px rgba(18, 83, 128, 0.18), inset 0 0 22px rgba(12, 96, 172, 0.08);
+  backdrop-filter: blur(2px);
 }
 
-.item {
-  margin: 2rem 0;
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
 }
 
-.item h2 {
-  font-size: 2rem;
+.icon-box {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, #0d5ec7, #2bc0ff);
+  box-shadow: 0 0 20px rgba(54, 166, 255, 0.45);
+  color: #fff;
+  font-size: 1.55rem;
+  flex-shrink: 0;
+}
+
+.sobre-card h3 {
+  font-size: clamp(1.6rem, 2vw, 2.1rem);
+  line-height: 1.2;
   font-weight: 700;
-  margin-bottom: .5rem;
+  color: #ecf7ff;
 }
 
-.item p {
-  font-size: 1.1rem;
-  color: #d8d8d8;
-  line-height: 1.5;
+.sobre-card p {
+  margin-top: 0.2rem;
+  color: rgba(225, 234, 244, 0.8);
+  font-size: 1.06rem;
+  line-height: 1.6;
 }
 
-.linha-vertical {
-  position: absolute;
-  left: 50%;
-  top: 5%;
-  bottom: 5%;
-  width: 2px;
-  background: linear-gradient(to bottom, transparent, #00b4ff, transparent);
-  animation: pulsar 3s infinite ease-in-out;
-  z-index: 2;
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
 }
 
-@keyframes pulsar {
-  0%, 100% { opacity: 0.5; }
-  50% { opacity: 1; }
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.42rem 0.7rem;
+  border: 1px solid rgba(90, 168, 255, 0.2);
+  border-radius: 0.7rem;
+  background: rgba(20, 59, 92, 0.5);
+  color: #d8f0ff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.reveal-top {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.reveal-top.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .sobre-mim {
+    padding-top: 5rem;
+  }
+
+  .sobre-content {
+    width: min(92%, 640px);
+  }
+
+  .sobre-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-card {
+    padding: 1.15rem 1rem;
+  }
+
+  .card-head {
+    align-items: flex-start;
+  }
+
+  .icon-box {
+    width: 2.9rem;
+    height: 2.9rem;
+    font-size: 1.25rem;
+  }
+
+  .sobre-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .sobre-header p {
+    font-size: 1.05rem;
+  }
 }
 
 /*SESSÃO PROJETOS — DESKTOP*/
